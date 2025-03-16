@@ -64,6 +64,7 @@ This database contains 7 tables:
 
 
 10. Write a query in SQL to obtain the name of the patients starting with letter A.
+
 <img src="https://github.com/ErPrashantRathod/Hospital_Management_System_SQL/blob/main/Files/Hospital_Que10.png" width="400"/> &nbsp;
 
 
