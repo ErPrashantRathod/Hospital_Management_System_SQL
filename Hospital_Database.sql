@@ -1,10 +1,8 @@
-#CREATE DATABASE
-  
-CREATE DATABASE HOSPITAL_MANAGMENT_SYSTEM;
+CREATE DATABASE HOSPITAL_MANAGEMENT_SYSTEM_PROJECT;
 
 #Use DATABASE
   
-USE HOSPITAL_MANAGMENT_SYSTEM;
+USE HOSPITAL_MANAGEMENT_SYSTEM_PROJECT;
 
 #CREATION OF TABLE & ROW INSERTION 
 
@@ -53,57 +51,6 @@ VALUES
 (33,'Dr.Jamison Clayton','Assistant neonatologist'),
 (34,'Dr.Saige Juarez','Senior Resident'),
 (35,'Dr.Robert Suarez','Head Chief of Urology');
-
-# Affiliated_with
-
-CREATE TABLE affiliated_with(
-physicianid INT NOT NULL,
-departmentid INT NOT NULL,
-primaryaffiliation VARCHAR(1) NOT NULL,
-FOREIGN KEY(physicianid) references Physician(employeeid),
-Foreign Key(departmentid) references department(department_id)
-);
-
-INSERT INTO affiliated_with(physicianid,departmentid,primaryaffiliation) 
-VALUES
-(1,1,'t'),
-(2,1,'t'),
-(3,1,'f'),
-(3,2,'t'),
-(4,1,'t'),
-(5,10,'t'),
-(6,2,'t'),
-(7,1,'f'),
-(7,2,'t'),
-(8,1,'t'),
-(9,3,'t'),
-(10,5,'t'),
-(11,4,'f'),
-(12,12,'t'),
-(13,4,'t'),
-(14,14,'f'),
-(15,9,'t'),
-(16,10,'f'),
-(17,15,'t'),
-(18,11,'t'),
-(19,7,'t'),
-(20,14,'f'),
-(21,15,'t'),
-(22,13,'t'),
-(23,14,'f'),
-(24,8,'t'),
-(25,14,'t'),
-(26,11,'f'),
-(27,8,'t'),
-(28,6,'t'),
-(29,14,'t'),
-(30,7,'t'),
-(31,5,'f'),
-(32,4,'f'),
-(33,13,'t'),
-(34,11,'t'),
-(35,6,'t');
-
 #Department Table
 
 create table department(
@@ -131,10 +78,61 @@ values
 (14,'Critical care',25),
 (15,'Orthopedics',21);
 
+# Affiliated_with
+
+CREATE TABLE affiliated_with(
+physicianid INT NOT NULL,
+departmentid INT NOT NULL,
+primaryaffiliation BOOLEAN,
+FOREIGN KEY(physicianid) references Physician(employeeid),
+Foreign Key(departmentid) references department(department_id)
+);
+
+INSERT INTO affiliated_with(physicianid,departmentid,primaryaffiliation) 
+VALUES
+(1,1,1),
+(2,1,1),
+(3,1,1),
+(3,2,1),
+(4,1,1),
+(5,10,1),
+(6,2,1),
+(7,1,0),
+(7,2,1),
+(8,1,1),
+(9,3,1),
+(10,5,1),
+(11,4,0),
+(12,12,1),
+(13,4,1),
+(14,14,0),
+(15,9,1),
+(16,10,0),
+(17,15,1),
+(18,11,1),
+(19,7,1),
+(20,14,0),
+(21,15,1),
+(22,13,1),
+(23,14,0),
+(24,8,1),
+(25,14,1),
+(26,11,0),
+(27,8,1),
+(28,6,1),
+(29,14,1),
+(30,7,1),
+(31,5,0),
+(32,4,0),
+(33,13,1),
+(34,11,1),
+(35,6,1);
+
+
 # Nurse Table
 
 CREATE TABLE Nurse(
-nurse_id INT NOT NULL  ,
+nurse_id INT NOT NULL PRIMARY KEY ,
 name VARCHAR(150) NOT NULL,
 position VARCHAR(150) NOT NULL,
 registered VARCHAR(10) NOT NULL
@@ -185,22 +183,22 @@ surname VARCHAR(100) NOT NULL,
 address VARCHAR(100) NOT NULL,
 Gender VARCHAR(150) NOT NULL,
 phone VARCHAR(150) NOT NULL,
-primary_check INT NOT NULL,
-FOREIGN KEY(PRIMARY_CHECK) REFERENCES Physician(employeeid)
+primary_physician INT NOT NULL,
+FOREIGN KEY(primary_physician) REFERENCES Physician(employeeid)
 );
 
 
-INSERT INTO Patient(Patient_id,name,surname,address,Gender,phone,primary_check)
+INSERT INTO Patient(Patient_id,name,surname,address,Gender,phone, primary_physician)
 VALUES
-(01,'John','Smith','42 Foobar Lane','Male','555-0256-896',2),
-(02,'Grace','Ritchie','37 Snafu Drive','Female','555-0512-657',2),
-(03,'Remo','Xavier','101 Omgbbq Street','Male','555-1204-345',9),
-(04,'Dennis','Doe','1100 Foobaz Avenue','Male','555-2048-345',17),
-(05,'John','Smith','123 Main St','Male','555-123-4567',24),
-(06,'Emily','Johnson','56 Elm St','Female','555-234-5678',7),
-(07,'Michael','Williams','789 Oak St','Male','555-345-6789',13),
-(08,'Sarah','Brown','101 Pine St','Female','555-456-7890',25),
-(09,'David','Jones','234 Maple St', 'Male','555-567-8901',28),
+(1,'John','Smith','42 Foobar Lane','Male','555-0256-896',2),
+(2,'Grace','Ritchie','37 Snafu Drive','Female','555-0512-657',2),
+(3,'Remo','Xavier','101 Omgbbq Street','Male','555-1204-345',9),
+(4,'Dennis','Doe','1100 Foobaz Avenue','Male','555-2048-345',17),
+(5,'John','Smith','123 Main St','Male','555-123-4567',24),
+(6,'Emily','Johnson','56 Elm St','Female','555-234-5678',7),
+(7,'Michael','Williams','789 Oak St','Male','555-345-6789',13),
+(8,'Sarah','Brown','101 Pine St','Female','555-456-7890',25),
+(9,'David','Jones','234 Maple St', 'Male','555-567-8901',28),
 (10,'Jessica','Davis','567 Cedar St','Female','555-678-9012',19),
 (11,'Christopher','Wilson','890 Birch St','Male','555-789-0123',5),
 (12,'Ashley','Taylor','111 Walnut St','Female','555-890-1234',33),
@@ -237,13 +235,13 @@ VALUES
 CREATE TABLE PATIENT_DIAGNOSIS(
 Diagnosis VARCHAR(150) NOT NULL,
 Prescription VARCHAR(150) NOT NULL,
-Patient_ID INT NOT NULL,
+Patient_id INT NOT NULL,
 Physician_id INT NOT NULL,
 FOREIGN KEY(Patient_id) references Patient(Patient_id),
 FOREIGN KEY(Physician_id) references Physician(employeeid)
 );
 
-INSERT INTO PATIENT_DIAGNOSIS(Diagnosis,Prescription,Patient_ID,Physician_id)
+INSERT INTO PATIENT_DIAGNOSIS(Diagnosis,Prescription,Patient_id,Physician_id)
 VALUES
 ('Hypertension','Lisinopril',1,2),
 ('Arthritis','Naproxen & Aspirin',4,17), 
@@ -287,13 +285,13 @@ VALUES
 
 #Procedure Table
 
-CREATE TABLE procedures(
+CREATE TABLE medical_procedures (
 code INT PRIMARY KEY,
 name VARCHAR(150) NOT NULL,
 cost INT NOT NULL
 );
 
-INSERT INTO procedures(code,name,cost)
+INSERT INTO medical_procedures (code,name,cost)
 VALUES
 (1,'X-ray-Chest',1000),
 (2,'X-ray-Abdomen',1200),
@@ -318,20 +316,4 @@ VALUES
 
 #DATA RETRIEVAL USING SELECT STATEMENT
 
-SELECT * FROM physician;
-SELECT * FROM affiliated_with;
-SELECT * FROM department;
-SELECT * FROM nurse;
-SELECT * FROM patient;
-SELECT * FROM patient_diagnosis;
-SELECT * FROM procedures;
 
-# DESC STATEMENT
-
-DESC physician;
-DESC affiliated_with;
-DESC department;
-DESC nurse;
-DESC patient;
-DESC patient_diagnosis;
-DESC procedures;
