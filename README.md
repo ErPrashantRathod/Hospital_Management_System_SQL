@@ -24,4 +24,105 @@ This database contains 7 tables:
  <img src="https://github.com/ErPrashantRathod/Maven_Movies_Rental_DA/blob/main/Code_Output/MySQL-Logo.jpg" width="400"/> &nbsp;
 
 ## Project Result
+1.Write a query in SQL to obtain the name of the physician in alphabetical order.
+<img src="https://github.com/ErPrashantRathod/Maven_Movies_Rental_DA/blob/main/Code_Output/MySQL-Logo.jpg" width="400"/> &nbsp;
+
+2. Write a query in SQL to obtain the fullname of the patients whose gender is male.
+ <img src="https://github.com/ErPrashantRathod/Maven_Movies_Rental_DA/blob/main/Code_Output/MySQL-Logo.jpg" width="400"/> &nbsp;
+
+
+3. Write a query in SQL to find the name of the nurse who are the head of their department and are registered.
+ <img src="https://github.com/ErPrashantRathod/Maven_Movies_Rental_DA/blob/main/Code_Output/MySQL-Logo.jpg" width="400"/> &nbsp;
+
+
+4. Write a query in SQL to find the name of the nurse who are Team Leader or not registered.
+ <img src="https://github.com/ErPrashantRathod/Maven_Movies_Rental_DA/blob/main/Code_Output/MySQL-Logo.jpg" width="400"/> &nbsp;
+
+
+5. Write a query to obtain the avg cost of all the medical procedures.
+ <img src="https://github.com/ErPrashantRathod/Maven_Movies_Rental_DA/blob/main/Code_Output/MySQL-Logo.jpg" width="400"/> &nbsp;
+
+
+6. Write a query to obtain name and cost of the procedure whose cost is greater than 2000.
+ <img src="https://github.com/ErPrashantRathod/Maven_Movies_Rental_DA/blob/main/Code_Output/MySQL-Logo.jpg" width="400"/> &nbsp;
+
+
+7. Write a query to update the name of the patient to Robert Fernandez having patientid as 5.
+ <img src="https://github.com/ErPrashantRathod/Maven_Movies_Rental_DA/blob/main/Code_Output/MySQL-Logo.jpg" width="400"/> &nbsp;
+
+
+8. Write a query to drop phone column from patient table.
+ <img src="https://github.com/ErPrashantRathod/Maven_Movies_Rental_DA/blob/main/Code_Output/MySQL-Logo.jpg" width="400"/> &nbsp;
+
+
+9. Second maximum cost of medical procedure.
+ <img src="https://github.com/ErPrashantRathod/Maven_Movies_Rental_DA/blob/main/Code_Output/MySQL-Logo.jpg" width="400"/> &nbsp;
+
+
+10. Write a query in SQL to obtain the name of the patients starting with letter A.
+ <img src="https://github.com/ErPrashantRathod/Maven_Movies_Rental_DA/blob/main/Code_Output/MySQL-Logo.jpg" width="400"/> &nbsp;
+
+
+11. Write a query in SQL to obtain the name of the patients whose third letter is M.
+ <img src="https://github.com/ErPrashantRathod/Maven_Movies_Rental_DA/blob/main/Code_Output/MySQL-Logo.jpg" width="400"/> &nbsp;
+
+
+12. Write a query in SQL to obtain the name of the patients whose name start with letter J and ends with Z.
+ <img src="https://github.com/ErPrashantRathod/Maven_Movies_Rental_DA/blob/main/Code_Output/MySQL-Logo.jpg" width="400"/> &nbsp;
+
+
+13. Write a query to obtain patient details having patient_id 11 to 20.
+ <img src="https://github.com/ErPrashantRathod/Maven_Movies_Rental_DA/blob/main/Code_Output/MySQL-Logo.jpg" width="400"/> &nbsp;
+
+
+14.  Write a query in SQL to obtain the name of the physicians who are the head of each department.
+ <img src="https://github.com/ErPrashantRathod/Maven_Movies_Rental_DA/blob/main/Code_Output/MySQL-Logo.jpg" width="400"/> &nbsp;
+
+
+15. Write a query in SQL to obtain the name of the patients with their physicians by whom they got their preliminary treatement.
+ <img src="https://github.com/ErPrashantRathod/Maven_Movies_Rental_DA/blob/main/Code_Output/MySQL-Logo.jpg" width="400"/> &nbsp;
+
+
+16. Write a query in SQL to obtain the name of the physician with the department who are done with affiliation.
+ <img src="https://github.com/ErPrashantRathod/Maven_Movies_Rental_DA/blob/main/Code_Output/MySQL-Logo.jpg" width="400"/> &nbsp;
+
+
+17. Write a query to obtain physician name,position and department they are affiliated with.
+ <img src="https://github.com/ErPrashantRathod/Maven_Movies_Rental_DA/blob/main/Code_Output/MySQL-Logo.jpg" width="400"/> &nbsp;
+
+
+18. Write a query in SQL to obtain the patient name from which physician they get primary_checkup and also mention the patient diagnosis with prescription.
+ <img src="https://github.com/ErPrashantRathod/Maven_Movies_Rental_DA/blob/main/Code_Output/MySQL-Logo.jpg" width="400"/> &nbsp;
+
+
+19. Write a query in SQL to obtain the maximum cost of the medical procedure.
+ <img src="https://github.com/ErPrashantRathod/Maven_Movies_Rental_DA/blob/main/Code_Output/MySQL-Logo.jpg" width="400"/> &nbsp;
+
+
+20. Write a query in SQL to obtain the details of patient who has diagnosed with chronic pain.
+ <img src="https://github.com/ErPrashantRathod/Maven_Movies_Rental_DA/blob/main/Code_Output/MySQL-Logo.jpg" width="400"/> &nbsp;
+
+
+21. Write a query in SQL to obtain the procedure name and cost whose cost is greater than the avg cost of all the procedure.
+ <img src="https://github.com/ErPrashantRathod/Maven_Movies_Rental_DA/blob/main/Code_Output/MySQL-Logo.jpg" width="400"/> &nbsp;
+
+
+22. Write a query in SQL to obtain the procedure name and cost whose cost is less than the avg cost of all the procedure.
+ <img src="https://github.com/ErPrashantRathod/Maven_Movies_Rental_DA/blob/main/Code_Output/MySQL-Logo.jpg" width="400"/> &nbsp;
+
+
+23. Write a query in SQL to obtain the physician name who are either head chief or senior in their respective department.
+ <img src="https://github.com/ErPrashantRathod/Maven_Movies_Rental_DA/blob/main/Code_Output/MySQL-Logo.jpg" width="400"/> &nbsp;
+
+
+24.  Write a query in SQL to obtain the employeeid, physician name and position whose primary affiliation has not been done. 
+ <img src="https://github.com/ErPrashantRathod/Maven_Movies_Rental_DA/blob/main/Code_Output/MySQL-Logo.jpg" width="400"/> &nbsp;
+
+
+
+
+
+
+
+
 
