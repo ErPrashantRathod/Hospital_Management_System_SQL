@@ -21,4 +21,4 @@ This database contains 7 tables:
 ## Database
 
 * MySQL
-  
+ <img src="https://github.com/ErPrashantRathod/Maven_Movies_Rental_DA/blob/main/Code_Output/MySQL-Logo.jpg" width="400"/> &nbsp; 
