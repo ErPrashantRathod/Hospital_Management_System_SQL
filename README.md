@@ -16,7 +16,7 @@ This database contains 7 tables:
 4. Nurse
 5. Patient
 6. Patient Diagnosis
-7. Procedures
+7. Medical Procedures
 
 ## Database
 
