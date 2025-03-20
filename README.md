@@ -28,7 +28,7 @@ This database contains 7 tables:
 
 ## Project Result
 
-[Click here to get full code](https://github.com/ErPrashantRathod/Maven_Movies_Rental_DA/blob/main/mavenmoviesrentalcode.sql)
+[Click here to get full code](https://github.com/ErPrashantRathod/Hospital_Management_System_SQL/blob/main/Hospital_management_system_project.sql)
 
 1.Write a query in SQL to obtain the name of the physician in alphabetical order.
 
