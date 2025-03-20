@@ -27,6 +27,9 @@ This database contains 7 tables:
  <img src="https://github.com/ErPrashantRathod/Maven_Movies_Rental_DA/blob/main/Code_Output/MySQL-Logo.jpg" width="400"/> &nbsp;
 
 ## Project Result
+
+[Click here to get full code](https://github.com/ErPrashantRathod/Maven_Movies_Rental_DA/blob/main/mavenmoviesrentalcode.sql)
+
 1.Write a query in SQL to obtain the name of the physician in alphabetical order.
 
 <img src="https://github.com/ErPrashantRathod/Hospital_Management_System_SQL/blob/main/Files/Hospital_Que1.png" width="400"/> &nbsp;
