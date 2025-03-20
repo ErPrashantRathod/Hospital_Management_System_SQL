@@ -1,6 +1,6 @@
 # Hospital_Management_System_SQL
 
-<img src="https://github.com/ErPrashantRathod/Hospital_Management_System_SQL/blob/main/Files/DALL%C2%B7E%202025-03-20%2010.56.59%20-%20A%20modern%20hospital%20building%20with%20a%20large%20red%20heart%20symbol%20in%20front.%20A%20team%20of%20doctors%2C%20wearing%20white%20lab%20coats%20and%20scrubs%20with%20stethoscopes%20around%20thei.webp" width="400"/> &nbsp;
+<img src="https://github.com/ErPrashantRathod/Hospital_Management_System_SQL/blob/main/Files/DALL%C2%B7E%202025-03-20%2010.56.59%20-%20A%20modern%20hospital%20building%20with%20a%20large%20red%20heart%20symbol%20in%20front.%20A%20team%20of%20doctors%2C%20wearing%20white%20lab%20coats%20and%20scrubs%20with%20stethoscopes%20around%20thei.webp" width="800"/> &nbsp;
  
 SQL project to analyze Hospital data
   
